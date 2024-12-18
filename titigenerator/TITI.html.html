@@ -47,27 +47,23 @@
     </div>
 
     <script>
-        // Array of image URLs (replace with your own image paths or URLs)
         const images = [
-            'TITI (1).jpeg', 'TITI (2).jpeg', 'TITI (3).jpeg', 'TITI (4).jpeg',
-            'TITI (5).jpeg', 'TITI (6).jpeg', 'TITI (7).jpeg', 'TITI (8).jpeg',
-            'TITI (9).jpeg', 'TITI (10).jpeg', 'TITI (11).jpeg', 'TITI (12).jpeg',
-            'TITI (13).jpeg', 'TITI (14).jpeg', 'TITI (15).jpeg', 'TITI (16).jpeg',
-            'TITI (17).jpeg', 'TITI (18).jpeg', 'TITI (19).jpeg', 'TITI (20).jpeg',
-            'TITI (21).jpeg', 'TITI (22).jpeg', 'TITI (23).jpeg', 'TITI (24).jpeg',
-            'TITI (25).jpeg', 'TITI (26).jpeg', 'TITI (27).jpeg', 'TITI (28).jpeg',
-            'TITI (29).jpeg', 'TITI (30).jpeg', 'TITI (31).jpeg', 'TITI (32).jpeg',
-            'TITI (33).jpeg', 'TITI (34).jpeg', 'TITI (35).jpeg', 'TITI (36).jpeg',
-            'TITI (37).jpeg', 'TITI (38).jpeg', 'TITI (39).jpeg', 'TITI (40).jpeg',
-            'TITI (41).jpeg', 'TITI (42).jpeg'
+            'images/TITI_1.jpeg', 'images/TITI_2.jpeg', 'images/TITI_3.jpeg', 'images/TITI_4.jpeg',
+            'images/TITI_5.jpeg', 'images/TITI_6.jpeg', 'images/TITI_7.jpeg', 'images/TITI_8.jpeg',
+            'images/TITI_9.jpeg', 'images/TITI_10.jpeg', 'images/TITI_11.jpeg', 'images/TITI_12.jpeg',
+            'images/TITI_13.jpeg', 'images/TITI_14.jpeg', 'images/TITI_15.jpeg', 'images/TITI_16.jpeg',
+            'images/TITI_17.jpeg', 'images/TITI_18.jpeg', 'images/TITI_19.jpeg', 'images/TITI_20.jpeg',
+            'images/TITI_21.jpeg', 'images/TITI_22.jpeg', 'images/TITI_23.jpeg', 'images/TITI_24.jpeg',
+            'images/TITI_25.jpeg', 'images/TITI_26.jpeg', 'images/TITI_27.jpeg', 'images/TITI_28.jpeg',
+            'images/TITI_29.jpeg', 'images/TITI_30.jpeg', 'images/TITI_31.jpeg', 'images/TITI_32.jpeg',
+            'images/TITI_33.jpeg', 'images/TITI_34.jpeg', 'images/TITI_35.jpeg', 'images/TITI_36.jpeg',
+            'images/TITI_37.jpeg', 'images/TITI_38.jpeg', 'images/TITI_39.jpeg', 'images/TITI_40.jpeg',
+            'images/TITI_41.jpeg', 'images/TITI_42.jpeg'
         ];
 
         function generateImage() {
-            // Get a random index from the images array
             const randomIndex = Math.floor(Math.random() * images.length);
             const randomImage = images[randomIndex];
-
-            // Display the selected image
             const imageContainer = document.getElementById('imageContainer');
             imageContainer.innerHTML = `<img src="${randomImage}" alt="Random Image">`;
         }
